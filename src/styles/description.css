@@ -1,0 +1,48 @@
+/* Reset some default margin and padding for better consistency */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a global font family and box-sizing */
+body {
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Style for the main container */
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/* Style for the background */
+.background {
+  background-color: #2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ecf0f1;
+}
+
+/* Style for the title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for the sections */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

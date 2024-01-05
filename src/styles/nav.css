@@ -1,0 +1,67 @@
+/* nav.css */
+
+/* Reset some default margin and padding for better consistency */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a global font family and box-sizing */
+body {
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Style for the navigation bar */
+nav {
+  background-color: #3498db;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Style for the logo */
+.logo {
+  text-decoration: none; /* Remove underline from link */
+}
+
+/* Style for the navigation links */
+.navtag ul {
+  list-style: none;
+  display: flex;
+}
+
+.navtag ul li {
+  margin-right: 20px;
+}
+
+.navtag ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navtag {
+    margin-top: 10px;
+  }
+
+  .navtag ul {
+    flex-direction: column;
+  }
+
+  .navtag ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
